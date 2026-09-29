@@ -1,0 +1,12 @@
+# 폴란드 원본 (다른 계정의 작업물 — 이 저장소에는 올리지 않는다)
+/lecture/
+/tour/
+
+# 로컬 도구
+/.claude/
+
+.DS_Store
+*.log
+.vscode/
+.idea/
+node_modules/

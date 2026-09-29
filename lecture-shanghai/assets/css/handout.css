@@ -1,0 +1,531 @@
+/* =========================================================
+   시안 A — 정제된 교양서 + Beat 단위 설계 전용 스타일
+   ========================================================= */
+
+/* -------- 페이지 골격 (좌측 미니 목차 + 본문) -------- */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-8);
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6) var(--space-9);
+}
+
+.minitoc {
+  position: sticky;
+  top: var(--space-6);
+  align-self: start;
+  font-size: var(--fs-small);
+  border-left: 1px solid var(--color-rule);
+  padding-left: var(--space-4);
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+.minitoc-title {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-mute);
+  font-size: 0.72rem;
+  margin-bottom: var(--space-4);
+}
+.minitoc ol { list-style: none; padding: 0; margin: 0; }
+.minitoc li { margin-bottom: var(--space-3); }
+.minitoc a {
+  display: block;
+  color: var(--color-ink-soft);
+  border: none;
+  line-height: 1.45;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+.minitoc a:hover { color: var(--color-accent); }
+.minitoc a .num {
+  display: inline-block;
+  width: 1.5em;
+  color: var(--color-ink-mute);
+  font-feature-settings: "tnum";
+}
+.minitoc a.active { color: var(--color-accent); font-weight: 600; }
+
+/* -------- 페이지 헤더 -------- */
+.page-head {
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-rule);
+}
+.page-head .breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-ink-mute);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-4);
+}
+.page-head .breadcrumb a { color: var(--color-ink-soft); border: none; }
+.page-head .breadcrumb a:hover { color: var(--color-accent); }
+.page-head h1 {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-3);
+  max-width: 16em;
+}
+.page-head .subtitle {
+  font-size: 1.15rem;
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+  max-width: var(--measure);
+}
+.page-head .meta {
+  margin-top: var(--space-5);
+  font-size: var(--fs-small);
+  color: var(--color-ink-mute);
+}
+.page-head .meta span { margin-right: var(--space-4); }
+.page-head .meta strong { color: var(--color-ink-soft); font-weight: 600; }
+
+/* -------- Beat 블록 — 하나의 호흡 단위 -------- */
+.beat {
+  margin-bottom: var(--space-9);
+  scroll-margin-top: var(--space-5);
+}
+.beat-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--color-ink);
+}
+.beat-header .beat-num {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  font-feature-settings: "tnum";
+}
+.beat-header h2 { flex: 1; font-size: 1.7rem; }
+.beat-header .beat-time {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--color-ink-mute);
+  text-transform: uppercase;
+}
+
+/* 리드인 — 이미지 보기 전 한 줄 컨텍스트 */
+.lead-in {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-ink-soft);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--space-2) var(--space-4);
+  margin: var(--space-5) 0 var(--space-6);
+  max-width: var(--measure);
+}
+
+/* 좌-우 분할 (이미지|본문) */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+  margin: var(--space-5) 0;
+}
+.split figure { margin: 0; }
+.split .text > *:first-child { margin-top: 0; }
+
+/* 본문 — 위-아래 (긴 본문용) */
+.prose { max-width: var(--measure); }
+.prose p { margin-bottom: 1.1em; }
+.prose strong { color: var(--color-accent-deep); }
+
+/* Beat 내부 꼭지 제목 — 위는 한 줄 반(48px) 분리, 아래는 1/3줄(12px) 호흡 */
+.beat h3 {
+  margin-top: var(--space-7);     /* 48px — 이전 콘텐츠와 분리 */
+  margin-bottom: var(--space-3);  /* 12px — 본문과 가깝되 숨 쉴 공간 */
+}
+/* 박스 내부의 h3는 외곽 마진 없음 (내부 요소이므로) */
+.beat .summary-box h3,
+.beat .sidenote h3,
+.beat .korea-mirror h3,
+.beat .dark-callout h3,
+.beat .next-up h3,
+.beat .compare-card h3,
+.beat .stat-card h3 {
+  margin-top: 0;
+}
+
+/* 전폭 이미지 */
+.full-fig {
+  margin: var(--space-6) calc(var(--space-6) * -1);
+}
+.full-fig img { border-radius: var(--radius-lg); }
+
+/* 비교 — 한국 vs 상하이 (거울 보기) */
+.korea-mirror {
+  background: linear-gradient(180deg, var(--color-paper-soft) 0%, var(--color-rule-soft) 100%);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin: var(--space-7) 0;
+}
+.korea-mirror h3 {
+  text-align: center;
+  margin-bottom: var(--space-5);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-soft);
+}
+.korea-mirror .compare-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-4);
+  text-align: center;
+}
+.korea-mirror .compare-grid .col h4 { color: var(--color-ink-soft); margin-bottom: var(--space-2); }
+.korea-mirror .compare-grid .col .num { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: var(--color-ink); }
+.korea-mirror .compare-grid .vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+.korea-mirror .row { display: contents; }
+.korea-mirror .row > * { padding: var(--space-3) 0; border-bottom: 1px dashed var(--color-rule); }
+.korea-mirror .row:last-child > * { border-bottom: 0; }
+.korea-mirror .row .label { font-size: 0.85rem; color: var(--color-ink-mute); letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* next-up / dark-callout 박스 내부 작은 액션 버튼 (우측 하단) */
+.next-up .actions,
+.dark-callout .actions {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+.next-up .btn,
+.dark-callout .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: transparent;
+  color: rgba(250, 247, 241, 0.78);
+  border: 1px solid rgba(250, 247, 241, 0.22);
+  text-decoration: none;
+  transition: all 0.15s;
+  line-height: 1.4;
+}
+.next-up .btn:hover,
+.dark-callout .btn:hover {
+  background: rgba(250, 247, 241, 0.08);
+  color: var(--color-paper);
+  border-color: rgba(250, 247, 241, 0.4);
+}
+.next-up .btn.primary,
+.dark-callout .btn.primary {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+.next-up .btn.primary:hover,
+.dark-callout .btn.primary:hover {
+  background: var(--color-accent-deep);
+  border-color: var(--color-accent-deep);
+}
+
+/* 다음 회차 안내 */
+.next-up {
+  margin-top: var(--space-9);
+  padding: var(--space-6);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-radius: var(--radius-lg);
+}
+.next-up .kicker { color: var(--color-accent-soft); }
+.next-up h3 { color: var(--color-paper); margin-bottom: var(--space-3); }
+.next-up p { color: rgba(250, 247, 241, 0.75); margin: 0; max-width: 40em; }
+
+/* -------- 연표(Timeline) 컴포넌트 -------- */
+.timeline {
+  margin: var(--space-6) 0;
+  padding: var(--space-5) 0 var(--space-5) var(--space-7);
+  position: relative;
+  border-left: 2px solid var(--color-rule);
+}
+.timeline .event {
+  position: relative;
+  padding-left: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+.timeline .event:last-child { padding-bottom: 0; }
+.timeline .event::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-5) - 7px);
+  top: 8px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid var(--color-paper);
+  box-shadow: 0 0 0 1px var(--color-rule);
+}
+.timeline .event.muted::before { background: var(--color-rule); }
+.timeline .event .year {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-accent-deep);
+  line-height: 1.2;
+  font-feature-settings: "tnum";
+}
+.timeline .event.muted .year { color: var(--color-ink-mute); }
+.timeline .event .title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 6px 0 8px;
+  color: var(--color-ink);
+}
+.timeline .event .detail {
+  font-size: 0.98rem;
+  color: var(--color-ink-soft);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* -------- 인용 단락 (역사적 발언·문서) -------- */
+.quote-block {
+  background: var(--color-paper-soft);
+  border: 1px solid var(--color-rule);
+  border-left: 4px solid var(--color-ink);
+  padding: var(--space-5) var(--space-6);
+  margin: var(--space-6) 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--color-ink);
+}
+.quote-block .src {
+  display: block;
+  margin-top: var(--space-3);
+  font-size: 0.85rem;
+  color: var(--color-ink-mute);
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+.quote-block strong { color: var(--color-accent-deep); }
+
+/* -------- 통계 카드 가로 그리드 (Beat 내 강조용) -------- */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
+}
+.stat-card {
+  background: var(--color-paper-soft);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  text-align: center;
+}
+.stat-card .big {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--color-accent-deep);
+  line-height: 1.1;
+  font-feature-settings: "tnum";
+}
+.stat-card .label {
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+  margin-top: 6px;
+}
+
+/* -------- 무거운 주제 처리용 — 어두운 배경 인용 -------- */
+.dark-callout {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  margin: var(--space-6) 0;
+}
+.dark-callout .label {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent-soft);
+  margin-bottom: var(--space-3);
+}
+.dark-callout p { color: rgba(250, 247, 241, 0.85); margin: 0 0 1em; }
+.dark-callout p:last-child { margin-bottom: 0; }
+.dark-callout strong { color: var(--color-paper); }
+
+/* =========================================================
+   6강 가이드 투어 전용 컴포넌트
+   ========================================================= */
+
+/* 투어 메타 정보 카드 (소요 시간·거리·동선 요약) */
+.tour-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  background: var(--color-paper-soft);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+}
+.tour-meta .meta-item { text-align: center; }
+.tour-meta .meta-item .val {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent-deep);
+  line-height: 1.1;
+}
+.tour-meta .meta-item .key {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-mute);
+  margin-top: 4px;
+}
+
+/* 정거장 카드 (Stop) */
+.stop {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-5);
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  background: var(--color-paper-soft);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  scroll-margin-top: var(--space-5);
+}
+.stop .stop-photo {
+  position: relative;
+  margin: 0;
+}
+.stop .stop-photo img {
+  width: 100%;
+  border-radius: var(--radius);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.stop .stop-photo .stop-num {
+  position: absolute;
+  top: 0; left: 0;
+  background: var(--color-accent);
+  color: white;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: var(--radius) 0 var(--radius) 0;
+  letter-spacing: 0.04em;
+}
+.stop .stop-body { padding-top: 2px; }
+.stop .stop-body .stop-time {
+  font-size: 0.78rem;
+  color: var(--color-ink-mute);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.stop .stop-body h3 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.stop .stop-body .stop-pl {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-ink-mute);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-3);
+}
+.stop .stop-body p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0 0 var(--space-3);
+  color: var(--color-ink);
+}
+.stop .stop-body p:last-of-type { margin-bottom: 0; }
+.stop .stop-body strong { color: var(--color-accent-deep); }
+
+/* 이동 단계 (Walking step between stops) */
+.walk {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: var(--space-3) 0 var(--space-3) var(--space-5);
+  padding: var(--space-3) var(--space-5);
+  background: transparent;
+  border-left: 2px dashed var(--color-rule);
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+}
+.walk .arrow {
+  font-family: var(--font-serif);
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.walk .walk-mode {
+  display: inline-block;
+  padding: 2px 10px;
+  background: var(--color-rule-soft);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-soft);
+}
+.walk .walk-mode.tram {
+  background: #FAE4E8;
+  color: var(--color-accent-deep);
+}
+.walk .walk-text { flex: 1; }
+.walk strong { color: var(--color-ink); font-weight: 600; }
+
+/* 옵션·추천 박스 */
+.option-box {
+  background: linear-gradient(180deg, var(--color-paper-soft) 0%, var(--color-rule-soft) 100%);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin: var(--space-6) 0;
+}
+.option-box .opt-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+/* 반응형 — 좁은 화면 */
+@media (max-width: 880px) {
+  .stop { grid-template-columns: 1fr; }
+  .tour-meta { grid-template-columns: repeat(2, 1fr); }
+  .stat-cards { grid-template-columns: 1fr; }
+  .layout { grid-template-columns: 1fr; padding: var(--space-5) var(--space-4); }
+  .minitoc { position: static; max-height: none; border-left: 0; border-bottom: 1px solid var(--color-rule); padding-left: 0; padding-bottom: var(--space-4); }
+  .split { grid-template-columns: 1fr; }
+  .full-fig { margin: var(--space-5) 0; }
+  .page-head h1 { font-size: 1.8rem; }
+  .beat-header h2 { font-size: 1.4rem; }
+  .korea-mirror .compare-grid { grid-template-columns: 1fr; }
+  .korea-mirror .compare-grid .vs { display: none; }
+}
