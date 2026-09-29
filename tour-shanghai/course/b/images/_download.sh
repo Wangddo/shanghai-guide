@@ -38,7 +38,7 @@ fetch "Site of the First National Congress of the Communist Party of China DSC53
 fetch "Xintiandi6.jpg" "03-xintiandi.jpg"
 fetch "Former Residence of Sun Yat-sen, Shanghai.JPG" "04-sinan-road.jpg"
 fetch "Tianzifang, Shanghai.jpg" "05-tianzifang.jpg"
-fetch "Wukang Mansion (20191114161507).jpg" "06-wukang-mansion.jpg"
-fetch "Street View of Wukang Road.JPG" "07-wukang-road.jpg"
-fetch "Jumbo kebab at Xinjiang Restaurant (20141121184744).JPG" "08-longtimeago.jpg"
+fetch "Jumbo kebab at Xinjiang Restaurant (20141121184744).JPG" "06-longtimeago.jpg"
+fetch "Wukang Mansion (20191114161507).jpg" "07-wukang-mansion.jpg"
+fetch "Street View of Wukang Road.JPG" "08-wukang-road.jpg"
 fetch "Bund at night Shanghai.jpg" "09-bund-night.jpg" 1600

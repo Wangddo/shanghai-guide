@@ -1,6 +1,6 @@
 // Shanghai Tour 통합 Service Worker (모든 코스 공용)
 // scope: sw.js가 놓인 폴더 (배포 경로에 무관)
-const CACHE_VERSION = 'shanghai-tour-v3';
+const CACHE_VERSION = 'shanghai-tour-v4';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -30,9 +30,9 @@ const CORE_ASSETS = [
   './course/b/images/03-xintiandi.jpg',
   './course/b/images/04-sinan-road.jpg',
   './course/b/images/05-tianzifang.jpg',
-  './course/b/images/06-wukang-mansion.jpg',
-  './course/b/images/07-wukang-road.jpg',
-  './course/b/images/08-longtimeago.jpg',
+  './course/b/images/06-longtimeago.jpg',
+  './course/b/images/07-wukang-mansion.jpg',
+  './course/b/images/08-wukang-road.jpg',
   './course/b/images/09-bund-night.jpg',
   './course/c/images/01-ring-bridge.jpg',
   './course/c/images/02-oriental-pearl.jpg',
