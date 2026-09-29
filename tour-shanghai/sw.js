@@ -1,6 +1,6 @@
 // Shanghai Tour 통합 Service Worker (모든 코스 공용)
 // scope: sw.js가 놓인 폴더 (배포 경로에 무관)
-const CACHE_VERSION = 'shanghai-tour-v4';
+const CACHE_VERSION = 'shanghai-tour-v5';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -51,9 +51,11 @@ const CORE_ASSETS = [
 ];
 
 self.addEventListener('install', (event) => {
+  // cache: 'reload' — 브라우저 HTTP 캐시(GitHub Pages는 max-age=600)를 건너뛰고 서버에서 새로 받는다.
+  // 이게 없으면 버전을 올려도 새 캐시가 10분 전의 옛 파일로 채워질 수 있다.
   event.waitUntil(
     caches.open(CACHE_VERSION).then((cache) =>
-      Promise.all(CORE_ASSETS.map((url) => cache.add(url).catch(() => null)))
+      Promise.all(CORE_ASSETS.map((url) => cache.add(new Request(url, { cache: 'reload' })).catch(() => null)))
     )
   );
   self.skipWaiting();
