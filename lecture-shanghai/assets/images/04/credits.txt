@@ -1,126 +1,131 @@
-# 4회차 이미지 — 투어 앱(tour-shanghai/course/*/images)과 같은 사진. 파일명 앞의 a-/b-/c-는 코스.
+# 4회차 이미지 — 투어 앱(tour-shanghai/course/sat|sun/images)과 같은 사진. 파일명 앞의 sat-/sun-은 요일.
 
-a-01-lujiazui-station.jpg
+sat-01-lujiazui-station.jpg
   File:Exit 8 of Lujiazui Station in Shanghai.jpg
   by Kmchang28 · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Exit_8_of_Lujiazui_Station_in_Shanghai.jpg
 
-a-02-nanjing-road.jpg
+sat-02-nanjing-road.jpg
   File:2014.11.15.184711 East Nanjing Road Pedestrian Zone Shanghai.jpg
   by Hermann Luyken · CC0
   https://commons.wikimedia.org/wiki/File:2014.11.15.184711_East_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg
 
-a-03-peace-hotel.jpg
+sat-03-peace-hotel.jpg
   File:Peace Hotel 20250503.jpg
   by Suicasmo · CC0
   https://commons.wikimedia.org/wiki/File:Peace_Hotel_20250503.jpg
 
-a-04-waibaidu-bridge.jpg
+sat-04-waibaidu-bridge.jpg
   File:Waibaidu Bridge Shanghai.jpg
   by kallerna · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Waibaidu_Bridge_Shanghai.jpg
 
-a-05-bund-promenade.jpg
+sat-05-bund-promenade.jpg
   File:Pudong Skyline from The Bund 20260417.jpg
   by DvTor8303 · CC0
   https://commons.wikimedia.org/wiki/File:Pudong_Skyline_from_The_Bund_20260417.jpg
 
-a-06-hsbc-customs.jpg
+sat-06-hsbc-customs.jpg
   File:2014.11.16.144807 HSBC Building Customs House The Bund Shanghai.jpg
   by Hermann Luyken · CC0
   https://commons.wikimedia.org/wiki/File:2014.11.16.144807_HSBC_Building_Customs_House_The_Bund_Shanghai.jpg
 
-a-07-grandmother.jpg
+sat-07-grandmother.jpg
   File:Red braised pork (20141106191221).JPG
   by N509FZ · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Red_braised_pork_(20141106191221).JPG
 
-a-08-huxinting.jpg
+sat-08-huxinting.jpg
   File:Shanghai - Yu Garden - 0035.jpg
   by Stefan Fussan · CC BY-SA 3.0
   https://commons.wikimedia.org/wiki/File:Shanghai_-_Yu_Garden_-_0035.jpg
 
-a-09-yu-garden.jpg
+sat-09-yu-garden.jpg
   File:Yuyuan garden Dragon wall.JPG
   by J. Patrick Fischer · CC BY-SA 3.0
   https://commons.wikimedia.org/wiki/File:Yuyuan_garden_Dragon_wall.JPG
 
-a-10-city-god-temple.jpg
+sat-10-city-god-temple.jpg
   File:2024-Apr Shanghai City God Temple 上海城隍廟 - img 01.jpg
   by Chainwit. · CC BY 4.0
   https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_City_God_Temple_上海城隍廟_-_img_01.jpg
 
-b-01-provisional-government.jpg
+sat-11-provisional-government.jpg
   File:Entrance of Provisional Government of ROK in Shanghai.JPG
   by Ericmetro · CC BY-SA 3.0
   https://commons.wikimedia.org/wiki/File:Entrance_of_Provisional_Government_of_ROK_in_Shanghai.JPG
 
-b-02-first-congress.jpg
+sat-12-first-congress.jpg
   File:Site of the First National Congress of the Communist Party of China DSC5397 (15581791143).jpg
   by Motohiro Sunouchi · CC BY 2.0
   https://commons.wikimedia.org/wiki/File:Site_of_the_First_National_Congress_of_the_Communist_Party_of_China_DSC5397_(15581791143).jpg
 
-b-03-xintiandi.jpg
+sat-13-xintiandi.jpg
   File:Xintiandi6.jpg
   by azureisle · CC BY 2.0
   https://commons.wikimedia.org/wiki/File:Xintiandi6.jpg
 
-b-04-sinan-road.jpg
+sat-14-sinan-road.jpg
   File:Former Residence of Sun Yat-sen, Shanghai.JPG
   by Jpbowen · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Former_Residence_of_Sun_Yat-sen,_Shanghai.JPG
 
-b-05-tianzifang.jpg
+sat-15-tianzifang.jpg
   File:Tianzifang, Shanghai.jpg
   by 钉钉 · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Tianzifang,_Shanghai.jpg
 
-b-06-longtimeago.jpg
+sat-16-longtimeago.jpg
   File:Jumbo kebab at Xinjiang Restaurant (20141121184744).JPG
   by N509FZ · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Jumbo_kebab_at_Xinjiang_Restaurant_(20141121184744).JPG
 
-b-07-wukang-mansion.jpg
+sat-17-wukang-mansion.jpg
   File:Wukang Mansion (20191114161507).jpg
   by N509FZ · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Wukang_Mansion_(20191114161507).jpg
 
-b-08-wukang-road.jpg
+sat-18-wukang-road.jpg
   File:Street View of Wukang Road.JPG
   by Livelikerw · CC BY-SA 3.0
   https://commons.wikimedia.org/wiki/File:Street_View_of_Wukang_Road.JPG
 
-b-09-bund-night.jpg
+sat-19-bund-night.jpg
   File:Bund at night Shanghai.jpg
   by Ernest Jourdier · CC BY 4.0
   https://commons.wikimedia.org/wiki/File:Bund_at_night_Shanghai.jpg
 
-c-01-ring-bridge.jpg
+sun-01-ring-bridge.jpg
   File:Minor skyscrapers in Lujiazui, Shanghai as seen from Lujiazui Pedestrian Bridge 20120602 1.jpg
   by DXR · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Minor_skyscrapers_in_Lujiazui,_Shanghai_as_seen_from_Lujiazui_Pedestrian_Bridge_20120602_1.jpg
 
-c-02-oriental-pearl.jpg
+sun-02-oriental-pearl.jpg
   File:Oriental Pearl Tower in Shanghai.jpg
   by Dmitry A. Mottl · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg
 
-c-03-binjiang.jpg
+sun-03-dimsum.jpg
+  File:Three dim sum in steamer basket.jpg
+  by Mshuang2 · CC0
+  https://commons.wikimedia.org/wiki/File:Three_dim_sum_in_steamer_basket.jpg
+
+sun-04-binjiang.jpg
   File:Blue hour view of the Bund from the Shanghai World Financial Center dllu.jpg
   by Dllu · CC BY-SA 4.0
   https://commons.wikimedia.org/wiki/File:Blue_hour_view_of_the_Bund_from_the_Shanghai_World_Financial_Center_dllu.jpg
 
-c-04-chen-guichun.jpg
+sun-05-chen-guichun.jpg
   File:Chen's Mansion Lujiazui.JPG
   by Livelikerw · CC BY-SA 3.0
   https://commons.wikimedia.org/wiki/File:Chen's_Mansion_Lujiazui.JPG
 
-c-05-shanghai-tower.jpg
+sun-06-shanghai-tower.jpg
   File:View on the observatory level of Shanghai Tower.jpg
   by GG001213 · CC0
   https://commons.wikimedia.org/wiki/File:View_on_the_observatory_level_of_Shanghai_Tower.jpg
 
-c-06-hongqiao-t1.jpg
+sun-07-hongqiao-t1.jpg
   File:Shanghai Hongqiao International Airport Terminal 1 building May 2026.jpg
   by 4300streetcar · CC BY 4.0
   https://commons.wikimedia.org/wiki/File:Shanghai_Hongqiao_International_Airport_Terminal_1_building_May_2026.jpg

@@ -35,7 +35,8 @@ if 'imageinfo' in p:
 
 fetch "Minor skyscrapers in Lujiazui, Shanghai as seen from Lujiazui Pedestrian Bridge 20120602 1.jpg" "01-ring-bridge.jpg"
 fetch "Oriental Pearl Tower in Shanghai.jpg" "02-oriental-pearl.jpg"
-fetch "Blue hour view of the Bund from the Shanghai World Financial Center dllu.jpg" "03-binjiang.jpg" 1600
-fetch "Chen's Mansion Lujiazui.JPG" "04-chen-guichun.jpg"
-fetch "View on the observatory level of Shanghai Tower.jpg" "05-shanghai-tower.jpg"
-fetch "Shanghai Hongqiao International Airport Terminal 1 building May 2026.jpg" "06-hongqiao-t1.jpg"
+fetch "Three dim sum in steamer basket.jpg" "03-dimsum.jpg"
+fetch "Blue hour view of the Bund from the Shanghai World Financial Center dllu.jpg" "04-binjiang.jpg" 1600
+fetch "Chen's Mansion Lujiazui.JPG" "05-chen-guichun.jpg"
+fetch "View on the observatory level of Shanghai Tower.jpg" "06-shanghai-tower.jpg"
+fetch "Shanghai Hongqiao International Airport Terminal 1 building May 2026.jpg" "07-hongqiao-t1.jpg"

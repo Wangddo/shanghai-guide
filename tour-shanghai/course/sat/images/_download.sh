@@ -33,12 +33,24 @@ if 'imageinfo' in p:
   sleep 3
 }
 
-fetch "Entrance of Provisional Government of ROK in Shanghai.JPG" "01-provisional-government.jpg"
-fetch "Site of the First National Congress of the Communist Party of China DSC5397 (15581791143).jpg" "02-first-congress.jpg"
-fetch "Xintiandi6.jpg" "03-xintiandi.jpg"
-fetch "Former Residence of Sun Yat-sen, Shanghai.JPG" "04-sinan-road.jpg"
-fetch "Tianzifang, Shanghai.jpg" "05-tianzifang.jpg"
-fetch "Jumbo kebab at Xinjiang Restaurant (20141121184744).JPG" "06-longtimeago.jpg"
-fetch "Wukang Mansion (20191114161507).jpg" "07-wukang-mansion.jpg"
-fetch "Street View of Wukang Road.JPG" "08-wukang-road.jpg"
-fetch "Bund at night Shanghai.jpg" "09-bund-night.jpg" 1600
+# 토요일 오전
+fetch "Exit 8 of Lujiazui Station in Shanghai.jpg" "01-lujiazui-station.jpg"
+fetch "2014.11.15.184711 East Nanjing Road Pedestrian Zone Shanghai.jpg" "02-nanjing-road.jpg"
+fetch "Peace Hotel 20250503.jpg" "03-peace-hotel.jpg"
+fetch "Waibaidu Bridge Shanghai.jpg" "04-waibaidu-bridge.jpg"
+fetch "Pudong Skyline from The Bund 20260417.jpg" "05-bund-promenade.jpg" 1600
+fetch "2014.11.16.144807 HSBC Building Customs House The Bund Shanghai.jpg" "06-hsbc-customs.jpg"
+fetch "Red braised pork (20141106191221).JPG" "07-grandmother.jpg"
+fetch "Shanghai - Yu Garden - 0035.jpg" "08-huxinting.jpg"
+fetch "Yuyuan garden Dragon wall.JPG" "09-yu-garden.jpg"
+fetch "2024-Apr Shanghai City God Temple 上海城隍廟 - img 01.jpg" "10-city-god-temple.jpg"
+# 토요일 오후·밤
+fetch "Entrance of Provisional Government of ROK in Shanghai.JPG" "11-provisional-government.jpg"
+fetch "Site of the First National Congress of the Communist Party of China DSC5397 (15581791143).jpg" "12-first-congress.jpg"
+fetch "Xintiandi6.jpg" "13-xintiandi.jpg"
+fetch "Former Residence of Sun Yat-sen, Shanghai.JPG" "14-sinan-road.jpg"
+fetch "Tianzifang, Shanghai.jpg" "15-tianzifang.jpg"
+fetch "Jumbo kebab at Xinjiang Restaurant (20141121184744).JPG" "16-longtimeago.jpg"
+fetch "Wukang Mansion (20191114161507).jpg" "17-wukang-mansion.jpg"
+fetch "Street View of Wukang Road.JPG" "18-wukang-road.jpg"
+fetch "Bund at night Shanghai.jpg" "19-bund-night.jpg" 1600

@@ -1,8 +1,8 @@
 // v3-flex.js — 유연한 동선 (편집 시트 드래그 + Pass + 슬롯 번호 + 동적 임베드)
 (function () {
   'use strict';
-  // 저장 키는 코스별로 분리한다. 정거장 id가 코스 간에 s01… 로 겹치기 때문에
-  // 공용 키를 쓰면 한 코스의 방문 체크가 다른 코스에도 그대로 비친다.
+  // 저장 키는 페이지(요일)별로 분리한다. 정거장 id가 페이지 간에 s01… 로 겹치기 때문에
+  // 공용 키를 쓰면 한 페이지의 방문 체크가 다른 페이지에도 그대로 비친다.
   const CITY = (window.TOUR_DATA.meta && window.TOUR_DATA.meta.cityKey) || 'default';
   const STORAGE_ORDER = `tourOrder_v3_${CITY}`;
   const STORAGE_PASSED = `tourPassed_v3_${CITY}`;

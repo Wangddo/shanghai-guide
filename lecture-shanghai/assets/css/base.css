@@ -191,7 +191,7 @@ figcaption .source {
   line-height: 1;
   margin-bottom: var(--space-2);
 }
-.compare-card .label { color: var(--color-ink-soft); font-size: 0.95rem; }
+.compare-card .label { color: var(--color-ink-soft); font-size: 0.95rem; overflow-wrap: anywhere; } /* 이메일·URL 같은 긴 토큰이 폰 폭을 밀어내지 않게 */
 
 /* 태그·라벨 */
 .kicker {
